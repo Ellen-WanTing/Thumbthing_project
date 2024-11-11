@@ -1,0 +1,17 @@
+@media only screen and (min-width: 576px)
+ {
+    #bookbody{
+        text-align: center;
+        font-weight: bolder;
+        line-height: 2.8;
+        /* background-color:#eaeaea; */
+    }
+
+    #headerBody{
+    line-height: 5;
+    font-size: larger;
+    font-weight: bolder;
+    margin-left:-10px;
+    }
+
+}

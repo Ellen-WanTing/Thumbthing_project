@@ -1,0 +1,13 @@
+@media (min-width:550px){
+.signupholder{
+    width:74%;
+    margin-top:2%;
+    height: 92vh;
+    overflow: scroll;    
+}
+}
+@media (max-width:550px){
+    .signupholder{        
+        margin-top: 25%;   
+    }
+}

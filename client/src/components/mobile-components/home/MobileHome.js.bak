@@ -1,0 +1,83 @@
+import { useState, useEffect } from 'react';
+import Axios from 'axios';
+
+import './MobileHome.css'
+
+import MobileSingleBookListItem from './MobileSingleBookListItem';
+import MobilePaginationButton from './MobilePaginationButton';
+
+import { GrPrevious,GrNext } from "react-icons/gr";
+import { IconContext } from "react-icons";
+
+export default function MobileHome() {    
+
+    var [state, setState] = useState({pageNumber:2,pages:[-2,-1,0,1,2]});
+    setState({books:{}})
+    console.log(state);
+    useEffect(()=>{
+        Axios.get('http://localhost:8000/api/book').then((response)=>{
+            setState({books:response.data})            
+        })
+    },[])
+    
+    function getBooks(){        
+        var books = state.books;
+        console.log(state)
+        var pageNumber = state.pageNumber;
+        
+        return books.slice((pageNumber-2)*9,(pageNumber-2)*9+9);
+    }
+    function changePage(nextPrevious,pageNumber=2){                
+        switch(nextPrevious){
+            //next Page
+            case 1:
+                if(state.pageNumber<state.books.length/9+1)
+                    setState({pageNumber:state.pageNumber+1});
+                break;
+            //previous Page
+            case -1:
+                if(state.pageNumber>2)
+                    setState({pageNumber:state.pageNumber-1});
+                break;
+            //leads directly to the page clicked on
+            case 0:                
+                if(pageNumber+2>=2 && pageNumber+2<=Math.ceil(state.books.length/9)+1){                    
+                    setState({pageNumber:pageNumber+2});
+                }
+                break;
+            default:
+                console.log("Error!");
+                alert("Error!");
+        }        
+    }                  
+        var pageNumber = state.pageNumber;                
+
+        return <div id="home-container">
+            
+            <div id="books-container">
+                {getBooks().map((book) => {
+                    return <MobileSingleBookListItem book={book} key={book.BookID}></MobileSingleBookListItem>                    
+                })
+                }                
+            </div>
+
+            <div id="pagination-element-container">
+                <MobilePaginationButton content={<IconContext.Provider value={{size:"20px"}}><GrPrevious/></IconContext.Provider>} 
+                onClick={()=>{changePage(-1)}}>
+
+                </MobilePaginationButton>            
+                {   
+                    this.state.pages.map((x)=>{
+                        return <MobilePaginationButton key={x} content={pageNumber+x+1} onClick={
+                            ()=>{                                                                
+                                changePage(0,pageNumber+x)
+                            }
+                        }> </MobilePaginationButton>
+                        })
+                }
+                <MobilePaginationButton content={<IconContext.Provider value={{size:"20px"}}><GrNext/></IconContext.Provider>} 
+                onClick={()=>{changePage(1)}}></MobilePaginationButton>            
+            </div>
+        </div>
+    
+}

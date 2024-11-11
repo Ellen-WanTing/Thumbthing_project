@@ -1,0 +1,22 @@
+@media (min-width: 576px) {
+    .cardTitle{
+        background-color: black;
+        opacity: 0.6;
+        margin-top: 18%;
+        text-align: center;
+    }
+    
+    .card-img-overlay{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
+    .categoryHolder{
+        margin-top: 2%;
+    }
+
+    #containerMainCategory{
+        height: 92vh;
+        overflow: scroll;
+        }
+}

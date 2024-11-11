@@ -1,0 +1,38 @@
+
+.booksHolder{
+    margin-top: 6%;
+    width:100%
+}
+
+.bodyItems{
+    display: flex;
+    flex-direction: row;
+}
+
+.topBooksList{
+    color: black;
+    margin-left: 6%;
+    margin-bottom: 4%;
+    font-weight: bold;
+    font-family: fangsong;
+    margin-top: 15%;
+}
+
+.containerBody {
+    display: flex;
+    width: 100%;
+}
+
+.bodyItems {
+    width: 76%;
+}
+
+/* For Mobile */
+
+.mobile-container{
+    margin-top: 23%;
+}
+
+/* For Mobile End */
+ 
+

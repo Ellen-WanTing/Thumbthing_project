@@ -1,0 +1,6 @@
+#summaries-container{
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    justify-content: center;
+}

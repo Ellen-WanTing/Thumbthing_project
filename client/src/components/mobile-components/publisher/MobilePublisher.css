@@ -1,0 +1,14 @@
+.publisher-item{
+    padding: 10px;
+    text-align: center;
+    font-family: cursive;    
+}
+.publisher-item:nth-child(even){
+    background-color:chartreuse;
+}
+.publisher-item:nth-child(odd){
+    background-color:aqua;
+}
+#publisher-container{
+    
+}

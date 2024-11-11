@@ -1,0 +1,21 @@
+#add-comment-container{
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    padding:5px;
+}
+#comment-text-area{
+    padding:5px;
+}
+#add-comment-buttons-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#comment-add-button{
+
+}
+#comment-cancel-button{
+
+}

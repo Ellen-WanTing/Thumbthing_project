@@ -1,0 +1,14 @@
+.author-item{
+    padding: 10px;
+    text-align: center;
+    font-family: cursive;    
+}
+.author-item:nth-child(even){
+    background-color:chartreuse;
+}
+.author-item:nth-child(odd){
+    background-color:aqua;
+}
+#author-container{
+    width: 100%;
+}

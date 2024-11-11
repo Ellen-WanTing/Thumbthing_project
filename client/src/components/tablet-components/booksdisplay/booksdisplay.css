@@ -1,0 +1,30 @@
+.bookDetailsImages{
+  border: 2px solid red;
+  margin : 0px 29px 0px 29px;
+  height: 140px;
+  width: 120px;
+}
+
+.bookdisplay{
+    text-align: center;
+}
+
+.booksDetailsTitle{
+  color:black;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 10px;
+
+}
+
+.booksDetailsAuthor{
+  color:red;
+  margin-bottom: 3px;
+  font-size : medium;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.bookDetailsPublisher{
+    color:blue;
+    font-size : medium;
+    font-family: Arial, Helvetica, sans-serif;
+}

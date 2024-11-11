@@ -1,0 +1,76 @@
+#containerHeader{
+padding:0px;
+}
+
+#navLinks{
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+width: 55%;
+}
+
+#navHomeOption{
+  color:black;
+  text-decoration:none;
+}
+
+#navHomeOption:active{
+color:blue;
+}
+
+#navHomeOption:hover{
+  color:blue;
+  }
+
+#navAboutOption{
+  color:black;
+  text-decoration:none;
+}
+
+#navAboutOption:active{
+  color:blue;
+  }
+
+  #navAboutOption:hover{
+    color:blue;
+    }
+
+#navSignupOption{
+  color:black;
+  text-decoration:none;
+}
+
+#navSignupOption:active{
+  color:blue;
+  }
+
+  #navSignupOption:hover{
+    color:blue;
+    }
+
+
+#navLoginOption{
+  color:black;
+  text-decoration:none;
+}
+
+#navLoginOption:active{
+  color:blue;
+  }
+
+  #navLoginOption:hover{
+    color:blue;
+    }
+
+    #navLogoutOption{
+      color:black;
+      text-decoration:none;
+    }
+    
+    #navLogoutOption:active{
+      color:blue;
+      }
+    
+      #navLogoutOption:hover{
+        color:blue;
+        }

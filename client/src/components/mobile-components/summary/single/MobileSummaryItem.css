@@ -1,0 +1,14 @@
+.summary-item-container{
+    height: 20%;
+    width:95%;
+    display:flex;     
+    flex-direction: column;
+    border:4px solid black;
+    margin:3%;
+} 
+.summary-text{
+    width:100%;
+    height: 75%;
+    font: message-box;
+    padding: 7px;
+}

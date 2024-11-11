@@ -1,0 +1,9 @@
+.summary-buttons-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px 5px;
+    background-color: blue;
+    color:grey;
+    flex-direction: row;    
+}

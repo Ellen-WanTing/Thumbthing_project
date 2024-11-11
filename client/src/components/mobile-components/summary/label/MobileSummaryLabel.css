@@ -1,0 +1,18 @@
+#summary-label{
+    font-weight: bolder;
+    font-size: medium;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding:20px 10px;
+}
+#add-summary-button{ 
+ margin-right:2%;
+}
+#add-summary-button>a{
+    text-decoration: none;
+}
+#add-summary-button>a:visited{
+    color:black;
+}

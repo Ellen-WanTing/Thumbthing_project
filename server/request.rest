@@ -1,0 +1,40 @@
+POST http://localhost:8000/api/signup
+Content-Type: application/json
+
+{
+    "Fullname": "Harry2",
+    "Email":"abcsd2@gmail.com",
+    "Password":"12fgfdsfs",
+    "Role":"2"
+}
+###
+PUT http://localhost:8000/api/summary/like/7
+
+###
+POST http://localhost:8000/api/summary
+
+{
+    "userID": 1,
+    "bookID": 65666,
+    "summary": "summary",
+}
+###
+
+POST http://localhost:8000/api/login
+Content-Type: application/json
+
+{  
+    
+    "Email":"abcsd1@gmail.com",
+    "Password":"12fgfdsfs",
+    "Role":"1"   
+    
+}
+
+###
+
+Get http://localhost:8000/api/adminonly
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyZXN1bHQiOlsyLDFdLCJpYXQiOjE2MTEyNTk3NzgsImV4cCI6MTYxMTI2MzM3OH0.dbk-VSgAacifTFd-5sKUMsnl6sjjHxgYLnsN_WRPDyY
+###
+Get http://localhost:8000/api/normaluser
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyZXN1bHQiOlszLDJdLCJpYXQiOjE2MTEyNTg3NzMsImV4cCI6MTYxMTI2MjM3M30.KbSuqua5OcCDQk04vDzY85gcF9msHKYeWSCAUV7-64o

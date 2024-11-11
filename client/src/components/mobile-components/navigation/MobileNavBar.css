@@ -1,0 +1,84 @@
+#nav-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #f1ebeb;
+    /* height: 20%; */
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+#search-container {
+    display: flex;
+    margin: 2%;
+    justify-content: space-evenly;
+    width: 95%;
+}
+
+#search-selection {
+    width: 30%;
+    color: #000;
+    font-size: xx-small;
+    font-weight: bold;
+}
+
+#search-input-box {
+    width: 45%;
+}
+#search-icon{
+    margin-left: -11%;
+    color: blue;
+    width: 1.2em;
+    height: 1.2em;
+}
+
+.nav-list {
+    margin: 2%;
+    list-style-type: none;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+    width: 85%;
+}
+
+.nav-list-item {
+    text-align: center;
+    place-content: center;
+    align-items: center;
+    font-size: xx-small;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    min-height: 10px;
+}
+
+.nav-list-item>a {
+    text-decoration: none;
+    font-size: 1.2ch;
+    align-items: center;
+}
+
+.nav-list-item>a:link {
+    color: black;
+}
+
+.nav-list-item>a:visited {
+    color: black;
+}
+
+.nav-list-item>a:hover {}
+
+.nav-list-item>a:active {
+    color: black;
+}
+
+#login-container {
+    width: 20%;
+}
+
+.login-icon{
+    color: blue;
+    width: 1.2em;
+    height: 1.2em;
+}

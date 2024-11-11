@@ -1,0 +1,43 @@
+  .sidebar{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 56%;
+    background-color: #e4e4e499;
+    border: 1px solid grey;
+
+    text-align: center;
+    width: 24%;
+    height: 94vh;
+    overflow: scroll;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    }
+ .sidebarMenu{
+  display: flex;
+  flex-direction: column;
+ } 
+  
+ .sidebarMenuHeading{
+  border-top: 1px double grey;
+  border-bottom: 1px double grey;
+  padding: 6px;
+ }
+
+ .navLink{
+  color: black;
+  font-family: unset;
+  padding: 10px;
+  font-size: medium;
+ }
+
+ .navLink:hover{
+  background-color:grey;
+  font-family: unset;
+  color:white;
+  text-decoration: none;
+ }
+
+  
+
